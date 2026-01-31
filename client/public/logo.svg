@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="#1e40af" opacity="0.1"/>
+  
+  <!-- Outer Ring - Gold -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#f59e0b" stroke-width="8" opacity="0.6"/>
+  
+  <!-- Inner Circle - Blue Gradient -->
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <circle cx="256" cy="256" r="200" fill="url(#blueGrad)"/>
+  
+  <!-- Upward Arrow in Center -->
+  <path d="M 256 140 L 200 220 L 230 220 L 230 340 L 282 340 L 282 220 L 312 220 Z" 
+        fill="url(#arrowGrad)" opacity="0.9"/>
+  
+  <!-- SKG Text -->
+  <text x="256" y="420" font-family="Inter, Arial, sans-serif" font-size="120" font-weight="bold" 
+        text-anchor="middle" fill="white" opacity="0.95">SKG</text>
+  
+  <!-- Gold accent line -->
+  <rect x="106" y="435" width="300" height="4" fill="#f59e0b" opacity="0.7" rx="2"/>
+</svg>
